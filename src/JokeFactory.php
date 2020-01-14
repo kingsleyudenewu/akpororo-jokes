@@ -1,8 +1,6 @@
 <?php
 
-
 namespace KingsleyUdenewu\AkpororoJokes;
-
 
 class JokeFactory
 {
@@ -10,11 +8,12 @@ class JokeFactory
         'Ahpororo is real',
         'A Godly fellow',
         'A lover of Christ',
-        'Great guy and has a lovely family'
+        'Great guy and has a lovely family',
     ];
+
     public function __construct($jokes = [])
     {
-        if (!empty($jokes)){
+        if (! empty($jokes)) {
             $this->jokes = $jokes;
         }
     }
